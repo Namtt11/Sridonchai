@@ -4,6 +4,7 @@ app_publisher = "university of phayao"
 app_description = "sridonchai village"
 app_email = "chaow.po@up.ac.th"
 app_license = "mit"
+export_python_type_annotations = True
 # required_apps = []
 
 # Includes in <head>
