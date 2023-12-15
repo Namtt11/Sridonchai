@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-15 20:45:56.245933",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "house"
+ ],
+ "fields": [
+  {
+   "fieldname": "house",
+   "fieldtype": "Link",
+   "label": "House",
+   "options": "House"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-15 20:48:21.565357",
+ "modified_by": "Administrator",
+ "module": "Sridonchai",
+ "name": "HouseManaged",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
