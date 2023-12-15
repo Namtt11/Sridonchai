@@ -16,7 +16,6 @@ class House(Document):
 
 		house_number: DF.Data | None
 		owner_name: DF.Data | None
-		text: DF.TextEditor | None
 	# end: auto-generated types
 
 	pass
