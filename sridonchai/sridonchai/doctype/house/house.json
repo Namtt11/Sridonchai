@@ -7,7 +7,8 @@
  "engine": "InnoDB",
  "field_order": [
   "house_number",
-  "owner_name"
+  "owner_name",
+  "test"
  ],
  "fields": [
   {
@@ -19,11 +20,16 @@
    "fieldname": "owner_name",
    "fieldtype": "Data",
    "label": "Owner Name"
+  },
+  {
+   "fieldname": "test",
+   "fieldtype": "Data",
+   "label": "Test"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-15 21:02:43.436935",
+ "modified": "2023-12-16 20:51:04.824942",
  "modified_by": "Administrator",
  "module": "Sridonchai",
  "name": "House",
