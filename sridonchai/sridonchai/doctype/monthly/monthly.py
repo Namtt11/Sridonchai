@@ -14,7 +14,7 @@ class Monthly(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		month: DF.Literal
+		month: DF.Literal["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]
 		year: DF.Data | None
 	# end: auto-generated types
 

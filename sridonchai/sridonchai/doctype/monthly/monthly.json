@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{year}-{month}",
  "creation": "2023-12-21 17:56:28.213631",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,7 +13,8 @@
   {
    "fieldname": "month",
    "fieldtype": "Select",
-   "label": "Month"
+   "label": "Month",
+   "options": "01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11\n12"
   },
   {
    "fieldname": "year",
@@ -22,10 +24,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-21 18:00:10.351458",
+ "modified": "2023-12-21 18:17:44.593003",
  "modified_by": "Administrator",
  "module": "Sridonchai",
  "name": "Monthly",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
