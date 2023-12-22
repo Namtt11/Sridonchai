@@ -14,7 +14,7 @@ class HouseManaged(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		house: DF.Link | None
+		house: DF.Link
 		parent: DF.Data
 		parentfield: DF.Data
 		parenttype: DF.Data

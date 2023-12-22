@@ -5,13 +5,13 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "month",
+  "user",
+  "house",
   "last_meter_unit",
   "current_meter_unit",
   "total_unit",
-  "total_price",
-  "house",
-  "user",
-  "month"
+  "total_price"
  ],
  "fields": [
   {
@@ -55,7 +55,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-22 20:22:47.925176",
+ "modified": "2023-12-22 21:03:57.179285",
  "modified_by": "Administrator",
  "module": "Sridonchai",
  "name": "Water Usage",

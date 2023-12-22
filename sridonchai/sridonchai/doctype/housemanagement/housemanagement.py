@@ -17,6 +17,7 @@ class HouseManagement(Document):
 
 		houses: DF.Table[HouseManaged]
 		user: DF.Link | None
+		user_full_name: DF.Data | None
 	# end: auto-generated types
 
 	pass
