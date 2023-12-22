@@ -11,8 +11,7 @@
   "total_price",
   "house",
   "user",
-  "month",
-  "date"
+  "month"
  ],
  "fields": [
   {
@@ -36,32 +35,27 @@
    "label": "total price"
   },
   {
-   "fieldname": "date",
-   "fieldtype": "Date",
-   "label": "Date"
-  },
-  {
    "fieldname": "house",
-   "fieldtype": "Table",
+   "fieldtype": "Link",
    "label": "House",
-   "options": "HouseManaged"
+   "options": "House"
   },
   {
    "fieldname": "user",
-   "fieldtype": "Table",
+   "fieldtype": "Link",
    "label": "User",
-   "options": "HouseManaged"
+   "options": "User"
   },
   {
    "fieldname": "month",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "Month",
    "options": "Monthly"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-21 22:38:15.679566",
+ "modified": "2023-12-22 20:22:47.925176",
  "modified_by": "Administrator",
  "module": "Sridonchai",
  "name": "Water Usage",

@@ -13,16 +13,14 @@ class WaterUsage(Document):
 
 	if TYPE_CHECKING:
 		from frappe.types import DF
-		from sridonchai.sridonchai.doctype.housemanaged.housemanaged import HouseManaged
 
 		current_meter_unit: DF.Int
-		date: DF.Date | None
-		house: DF.Table[HouseManaged]
+		house: DF.Link | None
 		last_meter_unit: DF.Int
-		month: DF.Literal["Monthly"]
+		month: DF.Link | None
 		total_price: DF.Int
 		total_unit: DF.Int
-		user: DF.Table[HouseManaged]
+		user: DF.Link | None
 	# end: auto-generated types
 
 	pass
