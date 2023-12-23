@@ -6,12 +6,16 @@
  "engine": "InnoDB",
  "field_order": [
   "month",
-  "user",
   "house",
+  "column_break_fpqv",
+  "user",
+  "section_break_pqaf",
   "last_meter_unit",
+  "total_price",
+  "column_break_hwuq",
   "current_meter_unit",
-  "total_unit",
-  "total_price"
+  "column_break_yobb",
+  "total_unit"
  ],
  "fields": [
   {
@@ -51,11 +55,27 @@
    "fieldtype": "Link",
    "label": "Month",
    "options": "Monthly"
+  },
+  {
+   "fieldname": "column_break_fpqv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_pqaf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_hwuq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_yobb",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-22 21:03:57.179285",
+ "modified": "2023-12-23 20:26:26.046970",
  "modified_by": "Administrator",
  "module": "Sridonchai",
  "name": "Water Usage",
