@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "creation": "2023-12-15 20:49:36.317420",
  "doctype": "DocType",
@@ -24,7 +25,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-15 20:51:47.812156",
+ "modified": "2023-12-23 21:13:46.933837",
  "modified_by": "Administrator",
  "module": "Sridonchai",
  "name": "HouseManagement",

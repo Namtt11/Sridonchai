@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:{year}-{month}",
  "creation": "2023-12-21 17:56:28.213631",
@@ -24,7 +25,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-21 18:17:44.593003",
+ "modified": "2023-12-23 21:14:53.972931",
  "modified_by": "Administrator",
  "module": "Sridonchai",
  "name": "Monthly",
