@@ -7,6 +7,9 @@
  "engine": "InnoDB",
  "field_order": [
   "user",
+  "column_break_pntr",
+  "user_full_name",
+  "section_break_bmbd",
   "houses"
  ],
  "fields": [
@@ -21,6 +24,20 @@
    "fieldtype": "Table",
    "label": "Houses",
    "options": "HouseManaged"
+  },
+  {
+   "fetch_from": "user.full_name",
+   "fieldname": "user_full_name",
+   "fieldtype": "Data",
+   "label": "User Full Name"
+  },
+  {
+   "fieldname": "column_break_pntr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_bmbd",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,

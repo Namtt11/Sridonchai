@@ -6,13 +6,17 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "last_meter_unit",
-  "current_meter_unit",
-  "total_unit",
-  "total_price",
+  "month",
   "house",
+  "column_break_fpqv",
   "user",
-  "month"
+  "section_break_pqaf",
+  "last_meter_unit",
+  "total_price",
+  "column_break_hwuq",
+  "current_meter_unit",
+  "column_break_yobb",
+  "total_unit"
  ],
  "fields": [
   {
@@ -52,6 +56,22 @@
    "fieldtype": "Link",
    "label": "Month",
    "options": "Monthly"
+  },
+  {
+   "fieldname": "column_break_fpqv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_pqaf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_hwuq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_yobb",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
