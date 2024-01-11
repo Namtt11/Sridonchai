@@ -18,6 +18,7 @@ class WaterUsage(Document):
 		house: DF.Link | None
 		last_meter_unit: DF.Int
 		month: DF.Link | None
+		paid: DF.Check
 		total_price: DF.Int
 		total_unit: DF.Int
 		user: DF.Link | None

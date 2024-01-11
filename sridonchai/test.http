@@ -1,0 +1,15 @@
+POST http://localhost:8000/api/method/sridonchai.sridonchai.api.get_house_status_by_month
+content-type: application/json
+
+{
+    "month": "2024-01"
+}
+
+###
+
+POST http://localhost:8000/api/method/sridonchai.sridonchai.api.get_house_status_by_month
+content-type: application/json
+
+{
+    "month": "2024-02"
+}

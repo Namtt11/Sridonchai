@@ -10,6 +10,7 @@
   "house",
   "column_break_fpqv",
   "user",
+  "paid",
   "section_break_pqaf",
   "last_meter_unit",
   "total_price",
@@ -72,11 +73,17 @@
   {
    "fieldname": "column_break_yobb",
    "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "paid",
+   "fieldtype": "Check",
+   "label": "Paid"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-23 21:30:59.579033",
+ "modified": "2024-01-11 15:11:55.109168",
  "modified_by": "Administrator",
  "module": "Sridonchai",
  "name": "Water Usage",
