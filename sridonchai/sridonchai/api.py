@@ -27,3 +27,25 @@ def get_house_status_by_month() :
             
 
     return result
+
+@frappe.whitelist(allow_guest=True)
+def get_overdue_house() :
+    request = frappe.form_dict
+
+
+    
+
+    result = frappe.db.sql(
+        f"""
+        select tabHouse.name,owner_name,house_number ,`tabWater Usage`.paid, `tabWater Usage`.total_price,`tabWater Usage`.current_meter_unit,sum(`tabWater Usage`.total_price) as overdue from tabHouse
+        left join `tabWater Usage` on tabHouse.name = `tabWater Usage`.house and `tabWater Usage`.paid = 0
+        group by tabHouse.name
+        """,
+        as_dict=True
+    )
+
+
+            
+            
+
+    return result

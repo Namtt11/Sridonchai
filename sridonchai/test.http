@@ -13,3 +13,11 @@ content-type: application/json
 {
     "month": "2024-02"
 }
+
+
+###
+
+POST http://localhost:8000/api/method/sridonchai.sridonchai.api.get_overdue_house
+content-type: application/json
+
+
