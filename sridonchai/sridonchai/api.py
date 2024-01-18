@@ -49,3 +49,40 @@ def get_overdue_house() :
             
 
     return result
+
+
+@frappe.whitelist(allow_guest=True)
+def get_info_house() :
+    request = frappe.form_dict
+
+
+    
+    #x
+    result = frappe.db.sql(
+        f"""
+        select `tabHouse`.owner_name, `tabHouse`.house_number from `tabHouse`
+        """,
+
+        as_dict=True
+    )
+    #y
+    result2 = frappe.db.sql(
+        f"""
+        select `tabWater Usage`.month ,`tabWater Usage`.total_unit,`tabWater Usage`.total_price ,`tabHouse`.owner_name,`tabHouse`.house_number from tabHouse
+        left join `tabWater Usage` on tabHouse.name = `tabWater Usage`.house
+        """,
+        
+        as_dict=True
+    )
+    for i in result:
+        b=[j for j in result2 if j['owner_name']==i['owner_name'] ]
+        i['Usages']=b
+    
+ 
+            
+            
+
+    return result
+
+
+

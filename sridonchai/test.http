@@ -21,3 +21,9 @@ POST http://localhost:8000/api/method/sridonchai.sridonchai.api.get_overdue_hous
 content-type: application/json
 
 
+###
+POST http://localhost:8000/api/method/sridonchai.sridonchai.api.get_info_house
+content-type: application/json
+
+
+
