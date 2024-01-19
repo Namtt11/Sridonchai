@@ -74,13 +74,23 @@ def get_info_house() :
         
         as_dict=True
     )
+    def get_name_month(text):
+        if text=="01":
+            return ("มกราคม")
+        elif text=="02":
+            return ("กุมภาพันธ์")
+        elif text=="03":
+            return ("มีนาคม")
+        
     for i in result:
         b=[j for j in result2 if j['owner_name']==i['owner_name'] ]
         i['Usages']=b
-    
- 
-            
-            
+    for i in result:
+        for j in i['Usages']:
+            text=j['month']
+            month=text.split("-")[1]
+            month=get_name_month(month)
+            j['month']=month
 
     return result
 
