@@ -9,7 +9,7 @@ def get_house_status_by_month() :
 
     result = frappe.db.sql(
         f"""
-        select tabHouse.name,owner_name,house_number ,`tabWater Usage`.month,`tabWater Usage`.paid  from tabHouse
+        select tabHouse.name,owner_name,house_number ,`tabWater Usage`.month,`tabWater Usage`.date_recieve  from tabHouse
         left join `tabWater Usage` on tabHouse.name = `tabWater Usage`.house and `tabWater Usage`.month= '{month}'
         """,
         as_dict=True
@@ -17,13 +17,10 @@ def get_house_status_by_month() :
 
 
     for i in result :
-        if i.paid == 1 :
+        if i.date_recieve != None :
             i['status'] = "เก็บเงินแล้ว"
-        elif i.paid == 0 :
-            i['status'] = "จดมิเตอร์แล้ว"
-        else :
+        elif i.date_recieve == None :
             i['status'] = "ยังไม่ได้ดำเนินการ"
-            
             
 
     return result

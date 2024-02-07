@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-23 10:12:37.821214",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "meter_cost_paid",
+  "house",
+  "date",
+  "date_recieve",
+  "month"
+ ],
+ "fields": [
+  {
+   "fieldname": "meter_cost_paid",
+   "fieldtype": "Data",
+   "label": " Meter cost paid"
+  },
+  {
+   "fieldname": "house",
+   "fieldtype": "Link",
+   "label": "House",
+   "options": "House"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "date_recieve",
+   "fieldtype": "Date",
+   "label": "Date recieve"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Link",
+   "label": "Month",
+   "options": "Monthly"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-05 14:56:56.828704",
+ "modified_by": "Administrator",
+ "module": "Sridonchai",
+ "name": "Meter Maintenance Cost",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

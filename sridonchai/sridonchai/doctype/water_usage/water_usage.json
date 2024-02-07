@@ -10,7 +10,7 @@
   "house",
   "column_break_fpqv",
   "user",
-  "paid",
+  "date_recieve",
   "section_break_pqaf",
   "last_meter_unit",
   "total_price",
@@ -75,15 +75,14 @@
    "fieldtype": "Column Break"
   },
   {
-   "default": "0",
-   "fieldname": "paid",
-   "fieldtype": "Check",
-   "label": "Paid"
+   "fieldname": "date_recieve",
+   "fieldtype": "Date",
+   "label": "Date recieve"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-11 15:11:55.109168",
+ "modified": "2024-02-04 23:11:36.690789",
  "modified_by": "Administrator",
  "module": "Sridonchai",
  "name": "Water Usage",

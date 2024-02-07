@@ -1,11 +1,11 @@
-# Copyright (c) 2023, university of phayao and contributors
+# Copyright (c) 2024, university of phayao and contributors
 # For license information, please see license.txt
 
 # import frappe
 from frappe.model.document import Document
 
 
-class WaterUsage(Document):
+class MeterMaintenanceCost(Document):
 	# begin: auto-generated types
 	# This code is auto-generated. Do not modify anything in this block.
 
@@ -14,14 +14,11 @@ class WaterUsage(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		current_meter_unit: DF.Int
+		date: DF.Date | None
 		date_recieve: DF.Date | None
 		house: DF.Link | None
-		last_meter_unit: DF.Int
+		meter_cost_paid: DF.Data | None
 		month: DF.Link | None
-		total_price: DF.Int
-		total_unit: DF.Int
-		user: DF.Link | None
 	# end: auto-generated types
 
 	pass
