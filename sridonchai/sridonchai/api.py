@@ -36,7 +36,6 @@ def get_house_status_by_month() :
             i['status'] = "ยังไม่ได้ดำเนินการ"
             
 
-    return result
 
 @frappe.whitelist(allow_guest=True)
 def get_overdue_house() :
