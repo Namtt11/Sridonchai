@@ -37,18 +37,22 @@ def get_house_status_by_month() :
             
 
 
-@frappe.whitelist(allow_guest=True)
+@frappe.whitelist(allow_guest=False)
 def get_overdue_house() :
     request = frappe.form_dict
-
+    current_user=frappe.session.user
 
     
 
     result = frappe.db.sql(
         f"""
-        select tabHouse.name,owner_name,house_number ,`tabWater Usage`.paid, `tabWater Usage`.total_price,`tabWater Usage`.current_meter_unit,sum(`tabWater Usage`.total_price) as overdue from tabHouse
-        left join `tabWater Usage` on tabHouse.name = `tabWater Usage`.house and `tabWater Usage`.date_recieve is null
+        SELECT tabHouse.owner_name,house_number , `tabWater Usage`.total_price,`tabWater Usage`.current_meter_unit,sum(`tabWater Usage`.total_price) as overdue FROM tabHouseManagement
+        join `tabHouseManaged` on 	`tabHouseManaged`.parent = tabHouseManagement.name
+        left join `tabHouse` On `tabHouse`.name= tabHouseManaged.house
+        left join `tabWater Usage` on tabHouse.name = `tabWater Usage`.house and `tabWater Usage`.date_recieve is not null
+        where tabHouseManagement.user = '{current_user}' 
         group by tabHouse.name
+      
         """,
         as_dict=True
     )
