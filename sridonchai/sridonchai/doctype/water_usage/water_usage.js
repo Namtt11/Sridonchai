@@ -6,3 +6,14 @@
 
 // 	},
 // });
+
+
+frappe.ui.form.on("Water Usage", "onload", function(frm){
+    frm.set_query("user", function(){
+        return {
+            filters: {
+                "ignore_user_type": 1
+            }
+        }
+    });
+});
