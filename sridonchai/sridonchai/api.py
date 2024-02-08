@@ -1,6 +1,7 @@
 import frappe
 
 @frappe.whitelist(allow_guest=False)
+#แสดงสถานะของบ้านที่เจ้าหน้าที่ที่ล็อกอินจัดการ
 def get_house_status_by_month() :
     request = frappe.form_dict
     current_user=frappe.session.user
@@ -36,6 +37,7 @@ def get_house_status_by_month() :
             i['status'] = "ยังไม่ได้ดำเนินการ"
             
 
+    return result
 
 @frappe.whitelist(allow_guest=False)
 def get_overdue_house() :
@@ -63,7 +65,7 @@ def get_overdue_house() :
 
     return result
 
-
+#แสดงข้อมูลบ้านและข้อมูลการใช้น้ำ หน่วยน้ำ ค่าน้ำ
 @frappe.whitelist(allow_guest=True)
 def get_info_house() :
     request = frappe.form_dict
