@@ -9,7 +9,8 @@
   "house",
   "date",
   "date_recieve",
-  "month"
+  "month",
+  "user"
  ],
  "fields": [
   {
@@ -38,11 +39,17 @@
    "fieldtype": "Link",
    "label": "Month",
    "options": "Monthly"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-05 14:56:56.828704",
+ "modified": "2024-02-10 21:33:50.083324",
  "modified_by": "Administrator",
  "module": "Sridonchai",
  "name": "Meter Maintenance Cost",

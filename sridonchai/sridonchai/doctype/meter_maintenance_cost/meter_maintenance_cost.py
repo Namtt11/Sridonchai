@@ -19,6 +19,7 @@ class MeterMaintenanceCost(Document):
 		house: DF.Link | None
 		meter_cost_paid: DF.Data | None
 		month: DF.Link | None
+		user: DF.Link | None
 	# end: auto-generated types
 
 	pass
