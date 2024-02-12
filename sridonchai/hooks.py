@@ -134,23 +134,23 @@ export_python_type_annotations = True
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-#	"all": [
-#		"sridonchai.tasks.all"
-#	],
-#	"daily": [
-#		"sridonchai.tasks.daily"
-#	],
-#	"hourly": [
-#		"sridonchai.tasks.hourly"
-#	],
-#	"weekly": [
-#		"sridonchai.tasks.weekly"
-#	],
-#	"monthly": [
-#		"sridonchai.tasks.monthly"
-#	],
-# }
+scheduler_events = {
+	"all": [
+		#"sridonchai.tasks.all"
+	],
+	"daily": [
+		#"sridonchai.tasks.daily"
+	],
+	"hourly": [
+		# "sridonchai.tasks.hourly"
+	],
+	"weekly": [
+		# "sridonchai.tasks.weekly"
+	],
+	"monthly": [
+		"sridonchai.task.x"
+	],
+}
 
 # Testing
 # -------

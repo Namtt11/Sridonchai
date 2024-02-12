@@ -14,6 +14,7 @@ class House(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
+		active: DF.Check
 		house_number: DF.Data | None
 		owner_name: DF.Data | None
 	# end: auto-generated types

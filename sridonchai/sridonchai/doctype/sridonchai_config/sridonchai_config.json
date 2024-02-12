@@ -1,51 +1,40 @@
 {
  "actions": [],
- "allow_import": 1,
  "allow_rename": 1,
- "autoname": "format: {house_number} - {owner_name}",
- "creation": "2023-12-14 16:06:04.804601",
+ "creation": "2024-02-10 21:55:35.733583",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "house_number",
-  "owner_name",
-  "active"
+  "unit_per_month",
+  "meter_maintenance_cost"
  ],
  "fields": [
   {
-   "fieldname": "house_number",
+   "fieldname": "meter_maintenance_cost",
    "fieldtype": "Data",
-   "label": "House Number"
+   "label": "Meter Maintenance Cost"
   },
   {
-   "fieldname": "owner_name",
+   "fieldname": "unit_per_month",
    "fieldtype": "Data",
-   "label": "Owner Name"
-  },
-  {
-   "default": "0",
-   "fieldname": "active",
-   "fieldtype": "Check",
-   "label": "Active"
+   "label": "Unit per month"
   }
  ],
  "index_web_pages_for_search": 1,
+ "issingle": 1,
  "links": [],
- "modified": "2024-02-12 13:55:50.149739",
+ "modified": "2024-02-12 13:49:32.564323",
  "modified_by": "Administrator",
  "module": "Sridonchai",
- "name": "House",
- "naming_rule": "Expression",
+ "name": "Sridonchai config",
  "owner": "Administrator",
  "permissions": [
   {
    "create": 1,
    "delete": 1,
    "email": 1,
-   "export": 1,
    "print": 1,
    "read": 1,
-   "report": 1,
    "role": "System Manager",
    "share": 1,
    "write": 1

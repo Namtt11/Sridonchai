@@ -5,29 +5,19 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "meter_cost_paid",
+  "cost_paid",
   "house",
-  "date",
+  "transaction_date",
   "date_recieve",
   "month",
   "user"
  ],
  "fields": [
   {
-   "fieldname": "meter_cost_paid",
-   "fieldtype": "Data",
-   "label": " Meter cost paid"
-  },
-  {
    "fieldname": "house",
    "fieldtype": "Link",
    "label": "House",
    "options": "House"
-  },
-  {
-   "fieldname": "date",
-   "fieldtype": "Date",
-   "label": "Date"
   },
   {
    "fieldname": "date_recieve",
@@ -45,11 +35,21 @@
    "fieldtype": "Link",
    "label": "User",
    "options": "User"
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "label": "Transaction date"
+  },
+  {
+   "fieldname": "cost_paid",
+   "fieldtype": "Data",
+   "label": "Cost paid"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-10 21:33:50.083324",
+ "modified": "2024-02-10 22:19:35.561581",
  "modified_by": "Administrator",
  "module": "Sridonchai",
  "name": "Meter Maintenance Cost",

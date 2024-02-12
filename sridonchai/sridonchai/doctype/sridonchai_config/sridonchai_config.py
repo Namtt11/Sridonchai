@@ -5,7 +5,7 @@
 from frappe.model.document import Document
 
 
-class MeterMaintenanceCost(Document):
+class Sridonchaiconfig(Document):
 	# begin: auto-generated types
 	# This code is auto-generated. Do not modify anything in this block.
 
@@ -14,12 +14,8 @@ class MeterMaintenanceCost(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		cost_paid: DF.Data | None
-		date_recieve: DF.Date | None
-		house: DF.Link | None
-		month: DF.Link | None
-		transaction_date: DF.Date | None
-		user: DF.Link | None
+		meter_maintenance_cost: DF.Data | None
+		unit_per_month: DF.Data | None
 	# end: auto-generated types
 
 	pass
