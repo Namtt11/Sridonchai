@@ -148,7 +148,7 @@ scheduler_events = {
 		# "sridonchai.tasks.weekly"
 	],
 	"monthly": [
-		"sridonchai.task.x"
+		"sridonchai.task.insert_meter_cost"
 	],
 }
 
