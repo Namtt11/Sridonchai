@@ -69,13 +69,14 @@ def get_overdue_house() :
 @frappe.whitelist(allow_guest=True)
 def get_info_house() :
     request = frappe.form_dict
-
+    name=request["name"]
 
     
     #x
     result = frappe.db.sql(
         f"""
-        select `tabHouse`.owner_name, `tabHouse`.house_number from `tabHouse`
+        select `tabHouse`.owner_name, `tabHouse`.house_number,`tabHouse`.name from `tabHouse`
+        where `tabHouse`.name='{name}'
         """,
 
         as_dict=True
@@ -89,25 +90,14 @@ def get_info_house() :
         
         as_dict=True
     )
-    def get_name_month(text):
-        if text=="01":
-            return ("มกราคม")
-        elif text=="02":
-            return ("กุมภาพันธ์")
-        elif text=="03":
-            return ("มีนาคม")
+  
         
     for i in result:
         b=[j for j in result2 if j['owner_name']==i['owner_name'] ]
         i['Usages']=b
-    for i in result:
-        for j in i['Usages']:
-            text=j['month']
-            month=text.split("-")[1]
-            month=get_name_month(month)
-            j['month']=month
+    
 
-    return result
+    return result[0] if len(result)>0 else None
 
 @frappe.whitelist(allow_guest=False)
 def get_current_user_info() :
@@ -118,8 +108,7 @@ def get_current_user_info() :
             'name': current_user
         },
         fields=['email', 'first_name','last_name'],
-        as_list=True
-    )
+    )[0]
 
 
 

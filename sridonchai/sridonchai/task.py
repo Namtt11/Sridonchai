@@ -7,8 +7,8 @@ def insert_meter_cost():
     doc.meter_maintenance_cost
     result = frappe.db.sql(
             f"""
-            select `tabHouse`.owner_name, `tabHouse`.house_number,`tabHouse`.name from `tabHouse`
-            where active= 1
+            left join `tabMeter Maintenance Cost` on `tabHouse`.name=`tabMeter Maintenance Cost`.house  
+            where active= 1 and `tabMeter Maintenance Cost`.name is null
             """,
 
             as_dict=True
