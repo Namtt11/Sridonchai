@@ -110,6 +110,23 @@ def get_current_user_info() :
         fields=['email', 'first_name','last_name'],
     )[0]
 
+@frappe.whitelist(allow_guest=True)
+def get_lastemeter_unit() :
+    request = frappe.form_dict
+    name=request["name"]
+    #x
+    result = frappe.db.sql(
+        f"""
+        select `tabWater Usage`.last_meter_unit  from `tabHouse`
+        left join `tabWater Usage` on `tabHouse`.name=`tabWater Usage`.house
+        where `tabHouse`.name='{name}'
+        group by house
+        """,
+        as_dict=True
+        
+    )
+    return result[0]
+
 
 
 
