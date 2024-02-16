@@ -1,0 +1,33 @@
+{
+ "chart_name": "Overdue Maintenance Cost",
+ "chart_type": "Report",
+ "creation": "2024-02-16 07:20:39.314739",
+ "custom_options": "{\"x_field\": \"house\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"overdue\", \"color\": \"#CB2929\"}], \"y_fields\": [\"overdue\"], \"colors\": [\"#CB2929\"]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2024-02-16 07:20:39.348428",
+ "modified_by": "Administrator",
+ "module": "Sridonchai",
+ "name": "Overdue Maintenance Cost",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Overdue Maintenance Cost",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "house",
+ "y_axis": [
+  {
+   "color": "#CB2929",
+   "y_field": "overdue"
+  }
+ ]
+}

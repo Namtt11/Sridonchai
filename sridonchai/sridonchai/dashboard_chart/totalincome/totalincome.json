@@ -1,0 +1,37 @@
+{
+ "chart_name": "Totalincome",
+ "chart_type": "Report",
+ "creation": "2024-02-16 07:13:49.119185",
+ "custom_options": "{\"x_field\": \"month\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"unpaid\", \"color\": \"#CB2929\"}, {\"idx\": 2, \"__islocal\": true, \"name\": \"row 2\", \"y_field\": \"paid\", \"color\": \"#29CD42\"}], \"y_fields\": [\"unpaid\", \"paid\"], \"colors\": [\"#CB2929\", \"#29CD42\"]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2024-02-16 07:13:49.149662",
+ "modified_by": "Administrator",
+ "module": "Sridonchai",
+ "name": "Totalincome",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "TotalIncome",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "month",
+ "y_axis": [
+  {
+   "color": "#CB2929",
+   "y_field": "unpaid"
+  },
+  {
+   "color": "#29CD42",
+   "y_field": "paid"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "chart_name": "Workprogress",
+ "chart_type": "Report",
+ "creation": "2024-02-16 07:17:47.930275",
+ "custom_options": "{\"x_field\": \"user\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"recieved\", \"color\": \"#29CD42\"}, {\"idx\": 2, \"__islocal\": true, \"name\": \"row 2\", \"y_field\": \"notrecieved\", \"color\": \"#f7d92a\"}, {\"idx\": 3, \"__islocal\": true, \"name\": \"row 3\", \"y_field\": \"notprocessed\", \"color\": \"#CB2929\"}], \"y_fields\": [\"recieved\", \"notrecieved\", \"notprocessed\"], \"colors\": [\"#29CD42\", \"#f7d92a\", \"#CB2929\"]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "filters_json": "{\"month\":\"2024-01\"}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2024-02-16 07:17:47.954917",
+ "modified_by": "Administrator",
+ "module": "Sridonchai",
+ "name": "Workprogress",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Workprogress",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "user",
+ "y_axis": [
+  {
+   "color": "#29CD42",
+   "y_field": "recieved"
+  },
+  {
+   "color": "#f7d92a",
+   "y_field": "notrecieved"
+  },
+  {
+   "color": "#CB2929",
+   "y_field": "notprocessed"
+  }
+ ]
+}

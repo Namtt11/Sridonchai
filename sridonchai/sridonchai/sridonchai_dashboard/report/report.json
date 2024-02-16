@@ -1,0 +1,32 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "width": "Half"
+  },
+  {
+   "chart": "Totalincome",
+   "width": "Half"
+  },
+  {
+   "chart": "Workprogress",
+   "width": "Half"
+  },
+  {
+   "chart": "Overdue Maintenance Cost",
+   "width": "Half"
+  }
+ ],
+ "creation": "2024-02-16 07:12:14.265094",
+ "dashboard_name": "report",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-02-16 07:20:39.379936",
+ "modified_by": "Administrator",
+ "module": "Sridonchai",
+ "name": "report",
+ "owner": "Administrator"
+}
