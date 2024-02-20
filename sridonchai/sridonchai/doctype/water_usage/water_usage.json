@@ -2,6 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
+ "autoname": "format:{Month}-{House}",
  "creation": "2023-12-21 21:57:46.376032",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -44,7 +45,9 @@
    "fieldname": "house",
    "fieldtype": "Link",
    "label": "House",
-   "options": "House"
+   "options": "House",
+   "set_only_once": 1,
+   "unique": 1
   },
   {
    "fieldname": "user",
@@ -82,10 +85,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-04 23:11:36.690789",
+ "modified": "2024-02-20 13:34:08.273153",
  "modified_by": "Administrator",
  "module": "Sridonchai",
  "name": "Water Usage",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
