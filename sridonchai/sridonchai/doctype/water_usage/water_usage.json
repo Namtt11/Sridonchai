@@ -2,7 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "format:{Month}-{House}",
+ "autoname": "format:{month}-{house}",
  "creation": "2023-12-21 21:57:46.376032",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -46,8 +46,7 @@
    "fieldtype": "Link",
    "label": "House",
    "options": "House",
-   "set_only_once": 1,
-   "unique": 1
+   "set_only_once": 1
   },
   {
    "fieldname": "user",
@@ -85,7 +84,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-20 13:34:08.273153",
+ "modified": "2024-02-22 13:55:29.301093",
  "modified_by": "Administrator",
  "module": "Sridonchai",
  "name": "Water Usage",
