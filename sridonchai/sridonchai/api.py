@@ -42,6 +42,7 @@ def get_house_status_by_month() :
 @frappe.whitelist(allow_guest=False)
 def get_overdue_house() :
     request = frappe.form_dict
+    name=request["name"]
     current_user=frappe.session.user
 
     
@@ -53,6 +54,7 @@ def get_overdue_house() :
         left join `tabHouse` On `tabHouse`.name= tabHouseManaged.house
         left join `tabWater Usage` on tabHouse.name = `tabWater Usage`.house and `tabWater Usage`.date_recieve is not null
         where tabHouseManagement.user = '{current_user}' 
+
         group by tabHouse.name
       
         """,
@@ -107,26 +109,37 @@ def get_current_user_info() :
         filters={
             'name': current_user
         },
-        fields=['email', 'first_name','last_name'],
+        fields=['email', 'first_name','last_name','username'],
     )[0]
 
-@frappe.whitelist(allow_guest=True)
-def get_lastemeter_unit() :
+@frappe.whitelist(allow_guest=False)
+def get_config() :
+    return frappe.get_doc('Sridonchai config')
+
+
+
+
+@frappe.whitelist(allow_guest=False)
+def get_lastmonth() :
     request = frappe.form_dict
-    name=request["name"]
-    #x
+    month = request['month']
+
     result = frappe.db.sql(
         f"""
-        select `tabWater Usage`.last_meter_unit  from `tabHouse`
-        left join `tabWater Usage` on `tabHouse`.name=`tabWater Usage`.house
-        where `tabHouse`.name='{name}'
-        group by house
-        """,
-        as_dict=True
+            SELECT tabHouse.name,owner_name,house_number ,`tabWater Usage`.month,`tabWater Usage`.date_recieve, FROM tabHouseManagement
+            join `tabHouseManaged` on 	`tabHouseManaged`.parent = tabHouseManagement.name
+            left join `tabHouse` On `tabHouse`.name= tabHouseManaged.house
+            left join `tabWater Usage` on tabHouse.name = `tabWater Usage`.house and `tabWater Usage`.month= '{month}'
         
+            where 
+    
+        """
+       ,
+
+
+        as_dict=True
     )
-    return result[0]
 
 
-
-
+    return result
+   
