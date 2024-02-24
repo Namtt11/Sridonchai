@@ -119,27 +119,20 @@ def get_config() :
 
 
 
-@frappe.whitelist(allow_guest=False)
-def get_lastmonth() :
+@frappe.whitelist(allow_guest=True)
+def get_lastemeter_unit() :
     request = frappe.form_dict
-    month = request['month']
-
+    name=request["name"]
+    #x
     result = frappe.db.sql(
         f"""
-            SELECT tabHouse.name,owner_name,house_number ,`tabWater Usage`.month,`tabWater Usage`.date_recieve, FROM tabHouseManagement
-            join `tabHouseManaged` on 	`tabHouseManaged`.parent = tabHouseManagement.name
-            left join `tabHouse` On `tabHouse`.name= tabHouseManaged.house
-            left join `tabWater Usage` on tabHouse.name = `tabWater Usage`.house and `tabWater Usage`.month= '{month}'
-        
-            where 
-    
-        """
-       ,
-
-
+        select `tabWater Usage`.last_meter_unit  from `tabHouse`
+        left join `tabWater Usage` on `tabHouse`.name=`tabWater Usage`.house
+        where `tabHouse`.name='{name}'
+        group by house
+        """,
         as_dict=True
+
     )
-
-
-    return result
+    return result[0]
    
