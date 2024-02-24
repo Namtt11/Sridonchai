@@ -42,10 +42,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-23 21:13:46.933837",
+ "modified": "2024-02-24 19:26:23.256146",
  "modified_by": "Administrator",
  "module": "Sridonchai",
  "name": "HouseManagement",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
