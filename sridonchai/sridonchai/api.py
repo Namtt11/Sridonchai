@@ -135,4 +135,3 @@ def get_lastemeter_unit() :
 
     )
     return result[0]
-   
