@@ -49,7 +49,7 @@ def get_overdue_house() :
 
     result = frappe.db.sql(
         f"""
-        SELECT tabHouse.owner_name,house_number , `tabWater Usage`.total_price,`tabWater Usage`.current_meter_unit,sum(`tabWater Usage`.total_price) as overdue FROM tabHouseManagement
+        SELECT tabHouse.owner_name,tabHouse.house_number , `tabWater Usage`.total_price,`tabWater Usage`.current_meter_unit,sum(`tabWater Usage`.total_price) as overdue FROM tabHouseManagement
         join `tabHouseManaged` on 	`tabHouseManaged`.parent = tabHouseManagement.name
         left join `tabHouse` On `tabHouse`.name= tabHouseManaged.house
         left join `tabWater Usage` on tabHouse.name = `tabWater Usage`.house and `tabWater Usage`.date_recieve is not null
