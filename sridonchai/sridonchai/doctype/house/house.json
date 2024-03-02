@@ -2,7 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "format: {house_number} - {owner_name}",
+ "autoname": "hash",
  "creation": "2023-12-14 16:06:04.804601",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -31,11 +31,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-19 11:30:44.882256",
+ "modified": "2024-03-02 11:35:20.371605",
  "modified_by": "Administrator",
  "module": "Sridonchai",
  "name": "House",
- "naming_rule": "Expression",
+ "naming_rule": "Random",
  "owner": "Administrator",
  "permissions": [
   {
@@ -51,7 +51,10 @@
    "write": 1
   }
  ],
+ "search_fields": "owner_name,house_number",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "house_number"
 }

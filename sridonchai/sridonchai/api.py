@@ -10,7 +10,7 @@ def get_house_status_by_month() :
 
     result = frappe.db.sql(
         f"""
-            SELECT tabHouse.name,owner_name,house_number ,`tabWater Usage`.month,`tabWater Usage`.date_recieve,`tabWater Usage`.total_price FROM tabHouseManagement
+            SELECT tabHouse.name,tabHouse.owner_name,tabHouse.house_number ,`tabWater Usage`.month,`tabWater Usage`.date_recieve,`tabWater Usage`.total_price FROM tabHouseManagement
             join `tabHouseManaged` on 	`tabHouseManaged`.parent = tabHouseManagement.name
             left join `tabHouse` On `tabHouse`.name= tabHouseManaged.house
             left join `tabWater Usage` on tabHouse.name = `tabWater Usage`.house and `tabWater Usage`.month= '{month}'

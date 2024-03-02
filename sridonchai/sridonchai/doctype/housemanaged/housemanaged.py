@@ -15,6 +15,8 @@ class HouseManaged(Document):
 		from frappe.types import DF
 
 		house: DF.Link
+		house_number: DF.Data | None
+		owner_name: DF.Data | None
 		parent: DF.Data
 		parentfield: DF.Data
 		parenttype: DF.Data
