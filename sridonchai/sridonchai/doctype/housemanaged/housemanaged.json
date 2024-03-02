@@ -9,7 +9,8 @@
  "field_order": [
   "house",
   "house_number",
-  "owner_name"
+  "owner_name",
+  "active"
  ],
  "fields": [
   {
@@ -25,21 +26,26 @@
    "fetch_from": "house.house_number",
    "fieldname": "house_number",
    "fieldtype": "Data",
-   "is_virtual": 1,
    "label": "House_number"
   },
   {
    "fetch_from": "house.owner_name",
    "fieldname": "owner_name",
    "fieldtype": "Data",
-   "is_virtual": 1,
    "label": "Owner_name"
+  },
+  {
+   "default": "0",
+   "fetch_from": "house.active",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-03-02 11:26:35.013816",
+ "modified": "2024-03-02 12:42:13.007386",
  "modified_by": "Administrator",
  "module": "Sridonchai",
  "name": "HouseManaged",
