@@ -1,0 +1,82 @@
+{
+ "charts": [
+  {
+   "chart_name": "Workprogress",
+   "label": "\u0e23\u0e32\u0e22\u0e01\u0e32\u0e23\u0e41\u0e2a\u0e14\u0e07\u0e01\u0e32\u0e23\u0e17\u0e33\u0e07\u0e32\u0e19\u0e02\u0e2d\u0e07\u0e40\u0e08\u0e49\u0e32\u0e2b\u0e19\u0e49\u0e32\u0e17\u0e35\u0e48"
+  },
+  {
+   "chart_name": "Number overdue Maintenance cost",
+   "label": "\u0e08\u0e33\u0e19\u0e27\u0e19\u0e1a\u0e49\u0e32\u0e19\u0e04\u0e49\u0e32\u0e07\u0e0a\u0e33\u0e23\u0e30\u0e04\u0e48\u0e32\u0e1a\u0e33\u0e23\u0e38\u0e07\u0e21\u0e34\u0e40\u0e15\u0e2d\u0e23\u0e4c"
+  },
+  {
+   "chart_name": "Totalincome",
+   "label": "\u0e23\u0e32\u0e22\u0e01\u0e32\u0e23\u0e41\u0e2a\u0e14\u0e07\u0e23\u0e32\u0e22\u0e44\u0e14\u0e49"
+  }
+ ],
+ "content": "[{\"id\":\"tzMPkP4rzb\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e1c\u0e39\u0e49\u0e43\u0e2b\u0e0d\u0e48\u0e1a\u0e49\u0e32\u0e19</span>\",\"col\":12}},{\"id\":\"OU9Vibz3Zo\",\"type\":\"chart\",\"data\":{\"chart_name\":\"\u0e23\u0e32\u0e22\u0e01\u0e32\u0e23\u0e41\u0e2a\u0e14\u0e07\u0e01\u0e32\u0e23\u0e17\u0e33\u0e07\u0e32\u0e19\u0e02\u0e2d\u0e07\u0e40\u0e08\u0e49\u0e32\u0e2b\u0e19\u0e49\u0e32\u0e17\u0e35\u0e48\",\"col\":12}},{\"id\":\"hb_t63OJSf\",\"type\":\"chart\",\"data\":{\"chart_name\":\"\u0e23\u0e32\u0e22\u0e01\u0e32\u0e23\u0e41\u0e2a\u0e14\u0e07\u0e23\u0e32\u0e22\u0e44\u0e14\u0e49\",\"col\":12}},{\"id\":\"atCOQzMzzv\",\"type\":\"chart\",\"data\":{\"chart_name\":\"\u0e08\u0e33\u0e19\u0e27\u0e19\u0e1a\u0e49\u0e32\u0e19\u0e04\u0e49\u0e32\u0e07\u0e0a\u0e33\u0e23\u0e30\u0e04\u0e48\u0e32\u0e1a\u0e33\u0e23\u0e38\u0e07\u0e21\u0e34\u0e40\u0e15\u0e2d\u0e23\u0e4c\",\"col\":12}},{\"id\":\"XaMxgEH2lE\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0e23\u0e32\u0e22\u0e07\u0e32\u0e19\",\"col\":4}}]",
+ "creation": "2024-02-10 15:26:13.857892",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e1c\u0e39\u0e49\u0e43\u0e2b\u0e0d\u0e48\u0e1a\u0e49\u0e32\u0e19",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0e23\u0e32\u0e22\u0e07\u0e32\u0e19",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0e23\u0e32\u0e22\u0e07\u0e32\u0e19\u0e23\u0e32\u0e22\u0e44\u0e14\u0e49\u0e23\u0e27\u0e21",
+   "link_count": 0,
+   "link_to": "TotalIncome",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0e23\u0e32\u0e22\u0e07\u0e32\u0e19\u0e04\u0e27\u0e32\u0e21\u0e04\u0e37\u0e1a\u0e2b\u0e19\u0e49\u0e32\u0e01\u0e32\u0e23\u0e17\u0e33\u0e07\u0e32\u0e19",
+   "link_count": 0,
+   "link_to": "Workprogress",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0e23\u0e32\u0e22\u0e01\u0e32\u0e23\u0e04\u0e49\u0e32\u0e07\u0e0a\u0e33\u0e23\u0e30\u0e04\u0e48\u0e32\u0e1a\u0e33\u0e23\u0e38\u0e07\u0e21\u0e34\u0e40\u0e15\u0e2d\u0e23\u0e4c",
+   "link_count": 0,
+   "link_to": "Overdue Maintenance Cost",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-03-02 20:00:34.631818",
+ "modified_by": "Administrator",
+ "module": "Sridonchai",
+ "name": "\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e1c\u0e39\u0e49\u0e43\u0e2b\u0e0d\u0e48\u0e1a\u0e49\u0e32\u0e19",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [],
+ "title": "\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e1c\u0e39\u0e49\u0e43\u0e2b\u0e0d\u0e48\u0e1a\u0e49\u0e32\u0e19"
+}

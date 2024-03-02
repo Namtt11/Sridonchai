@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{house}",
  "creation": "2024-01-23 10:12:37.821214",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -49,10 +50,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-10 22:19:35.561581",
+ "modified": "2024-03-02 19:22:01.450532",
  "modified_by": "Administrator",
  "module": "Sridonchai",
  "name": "Meter Maintenance Cost",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

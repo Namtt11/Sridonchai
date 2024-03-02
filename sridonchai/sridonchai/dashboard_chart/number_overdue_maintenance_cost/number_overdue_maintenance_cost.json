@@ -1,0 +1,37 @@
+{
+ "chart_name": "Number overdue Maintenance cost",
+ "chart_type": "Report",
+ "creation": "2024-03-02 19:59:39.115062",
+ "custom_options": "{\"x_field\": \"user\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"recieved\", \"color\": \"#29CD42\"}, {\"idx\": 2, \"__islocal\": true, \"name\": \"row 2\", \"y_field\": \"notrecieved\", \"color\": \"#CB2929\"}], \"y_fields\": [\"recieved\", \"notrecieved\"], \"colors\": [\"#29CD42\", \"#CB2929\"]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "filters_json": "{\"month\":\"2024-03\"}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2024-03-02 19:59:39.158990",
+ "modified_by": "Administrator",
+ "module": "Sridonchai",
+ "name": "Number overdue Maintenance cost",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Overdue Maintenance Cost",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "user",
+ "y_axis": [
+  {
+   "color": "#29CD42",
+   "y_field": "recieved"
+  },
+  {
+   "color": "#CB2929",
+   "y_field": "notrecieved"
+  }
+ ]
+}
